@@ -33,6 +33,9 @@ public class HasilkelulusanJpaController implements Serializable {
         return emf.createEntityManager();
     }
 
+    public HasilkelulusanJpaController() {
+    }
+
     public void create(Hasilkelulusan hasilkelulusan) throws IllegalOrphanException, PreexistingEntityException, Exception {
         List<String> illegalOrphanMessages = null;
         Kelas namaSekolahOrphanCheck = hasilkelulusan.getNamaSekolah();
