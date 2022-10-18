@@ -33,6 +33,9 @@ public class SiswaJpaController implements Serializable {
         return emf.createEntityManager();
     }
 
+    public SiswaJpaController() {
+    }
+
     public void create(Siswa siswa) throws PreexistingEntityException, Exception {
         EntityManager em = null;
         try {
