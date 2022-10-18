@@ -33,6 +33,9 @@ public class AdminappJpaController implements Serializable {
         return emf.createEntityManager();
     }
 
+    public AdminappJpaController() {
+    }
+
     public void create(Adminapp adminapp) throws PreexistingEntityException, Exception {
         EntityManager em = null;
         try {
